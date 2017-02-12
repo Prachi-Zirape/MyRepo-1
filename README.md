@@ -1,31 +1,38 @@
 # MyRepo-1
 
+<!DOCTYPE html>
 <html>
 <head>
-<title>Pokemon Chart</title>
+<title>Login Form</title>
 </head>
-<body>
-<h1>First Generation Pokemon</h1>
-<table border="2">
-<thead>
-<tr>
-<th>Name</th>
-<th>Image</th>
-<th>Evolve To</th>
-<th>Type</th>
-</tr>
-<tr>
-<td>Bulbasaur</td>
-<td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"></td>
-<td><a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur</a></td>
-<td>Grass/Poison</td>
-</tr>
-<tr>
-<td>Charmander</td>
-<td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"></td>
-<td><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
-<td>Fire</td>
-</thead>
-</table>
+<boby>
+<h1> Register</h1>
+<form>
+<label for="fname"> First name:</label>
+<input type="text" id="fname" placeholder="FirstName" required>
+<label for="lname"> Last Name: </label>
+<input type="text" id="lname" placeholder="LastName" required>
+<br></br>
+<label for="male">Male</label>
+<input name="selectRadio" type="radio" id="male" value="maleVal" >
+<label for="female">Female</label>
+<input name="selectRadio" id="female" type="radio" value="femalVal" >
+<label for="other">Other</label>
+<input name="selectRadio" id="other" type="radio" value="otherVal">
+<br></br>
+<label for="emailid">Email:</label>
+<input name="EmailAddress" id="emailid" type="email" placeholder="xyz@gmail.com" required>
+<label for="password" > Password: </password>
+<input name="pass" type="password" id="password" placeholder="*************" pattern=".{5,10}"  title="5 to 10 characters" required>
+<br></br>
+<lable for="BirthDate" >BirthDay: </label>
+<input type="date" name="datepicking" id="BirthDate" required>
+<br></br>
+<label for="t&c">I agree on terms and conditions</lable >
+<input type="checkbox" name="cBox" id="t&c" required>
+<br></br>
+<input type = "submit">
+</form>
 </body>
+
 </html>
